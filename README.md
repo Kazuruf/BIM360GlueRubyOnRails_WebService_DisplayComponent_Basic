@@ -95,3 +95,9 @@ Step6: View 3D model with display component
 Step7: Run `rails s` and browse to `http://localhost:3000`.
 
 Note: as for today, the display component (the 3d view component) is only available for firefox, chrome and IE does not support it.
+
+## Screenshot:
+
+![Model Information](https://github.com/lushibi/BIM360GlueRubyOnRails_WebService_DisplayComponent_Basic/blob/master/model_info.png "Model Information")
+
+![Glue View](https://github.com/lushibi/BIM360GlueRubyOnRails_WebService_DisplayComponent_Basic/blob/master/glue_view.png "Glue View")

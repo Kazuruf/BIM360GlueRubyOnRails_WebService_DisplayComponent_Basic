@@ -826,3 +826,213 @@ Processing by GlueViewsController#show as HTML
   Parameters: {"model_id"=>"108dedbf-8c8f-4fe1-838c-be26200f4eb3", "model_name"=>"ARC+ALL.dwf", "name"=>"Duplicated", "id"=>"97069ecf-b3bb-4370-8b55-4d7290b01ca2"}
   Rendered glue_views/show.html.erb within layouts/application (1.0ms)
 Completed 200 OK in 109ms (Views: 107.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/1e7e5e8d-fea8-49cd-8e5b-76058f0ee3b6" for 127.0.0.1 at 2016-03-02 21:47:50 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1e7e5e8d-fea8-49cd-8e5b-76058f0ee3b6"}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1673ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-03-02 21:47:52 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 152ms (Views: 152.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/glue_views.css?body=1" for 127.0.0.1 at 2016-03-02 21:47:52 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:52 +0800
+
+
+Started GET "/assets/models.css?body=1" for 127.0.0.1 at 2016-03-02 21:47:52 +0800
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2016-03-02 21:47:52 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-03-02 21:47:52 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-03-02 21:47:52 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-03-02 21:47:52 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:52 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:52 +0800
+
+
+Started GET "/assets/models.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:52 +0800
+
+
+Started GET "/assets/glue_views.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:52 +0800
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:52 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:52 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:52 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:52 +0800
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-02 21:47:57 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ho+4H7+t6ZUQK2zqWn+QzArkaqiqqud25BkuwooRFsQ=", "session"=>{"login_name"=>"aaron.lu@autodesk.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1758ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2016-03-02 21:47:59 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-03-02 21:47:59 +0800
+
+
+Started GET "/assets/models.css?body=1" for 127.0.0.1 at 2016-03-02 21:47:59 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-03-02 21:47:59 +0800
+
+
+Started GET "/assets/glue_views.css?body=1" for 127.0.0.1 at 2016-03-02 21:47:59 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:59 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:59 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:59 +0800
+
+
+Started GET "/assets/glue_views.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:59 +0800
+
+
+Started GET "/assets/models.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:59 +0800
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:59 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:59 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:59 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-03-02 21:47:59 +0800
+
+
+Started POST "/login" for 127.0.0.1 at 2016-03-02 21:48:08 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ho+4H7+t6ZUQK2zqWn+QzArkaqiqqud25BkuwooRFsQ=", "session"=>{"login_name"=>"aaron.lu@autodesk.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1762ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/models.css?body=1" for 127.0.0.1 at 2016-03-02 21:48:10 +0800
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2016-03-02 21:48:10 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-03-02 21:48:10 +0800
+
+
+Started GET "/assets/glue_views.css?body=1" for 127.0.0.1 at 2016-03-02 21:48:10 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:10 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-03-02 21:48:10 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:10 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:10 +0800
+
+
+Started GET "/assets/glue_views.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:10 +0800
+
+
+Started GET "/assets/models.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:10 +0800
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:10 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:10 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:10 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:10 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-02 21:48:40 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 64ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/glue_views.css?body=1" for 127.0.0.1 at 2016-03-02 21:48:41 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:41 +0800
+
+
+Started GET "/assets/models.css?body=1" for 127.0.0.1 at 2016-03-02 21:48:41 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:41 +0800
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2016-03-02 21:48:41 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2016-03-02 21:48:41 +0800
+
+
+Started GET "/assets/glue_views.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:41 +0800
+
+
+Started GET "/assets/models.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:41 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-03-02 21:48:41 +0800
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:41 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:41 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:41 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:41 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-03-02 21:48:41 +0800
+
+
+Started GET "/login" for 127.0.0.1 at 2016-03-02 21:48:43 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 91ms (Views: 90.0ms | ActiveRecord: 0.0ms)
