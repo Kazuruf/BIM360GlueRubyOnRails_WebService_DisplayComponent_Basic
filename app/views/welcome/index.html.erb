@@ -1,0 +1,4 @@
+<% if session[:login_name].nil? %>
+<% else %>
+  <div><%= link_to "Show projects", projects_path %></div>
+<% end %>

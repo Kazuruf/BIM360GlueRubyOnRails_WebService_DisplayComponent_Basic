@@ -1,0 +1,35 @@
+<div id="signin_form">
+  <p><%= link_to "[Back to project]", project_path(@model["project_id"]) %></p>
+  <h2>Model information</h2>
+  <div>Name: <%= URI.decode(@model["model_name"]) %></div>
+  <div>Model Id: <%= @model["model_id"] %></div>
+  <div>Project Id: <%= link_to @model["project_id"], project_path(@model["project_id"]) %></div>
+  <div>Created date: <%= @model["created_date"] %></div>
+  <div>Is merge model: <%= @model["is_merged_model"] ? "true" : "false" %></div>
+  <div>Created by: <%= @model["created_by"] %></div>
+  <div>Default view: <%= link_to @model["action_id"], glue_view_path(:id => @model["action_id"], :name => "Default", :model_id => @model["model_id"], :model_name => @model["model_name"]) %></div>
+  <hr>
+  <p>Views</p>
+  <table border="1">
+    <tr>
+      <th>Action</th>
+      <th>name</th>
+      <th>type</th>
+      <th>object_id</th>
+      <th>action_id</th>
+      <th>created_by</th>
+    </tr>
+<% if @model["view_tree"] %>
+  <% @model["view_tree"].each do |view| %>
+    <tr>
+      <td><%= link_to "View", glue_view_path(:id => view["action_id"], :name => view["name"], :model_id => @model["model_id"], :model_name => @model["model_name"]) %></td>
+      <td><%= URI.decode(view["name"]) %></td>
+      <td><%= view["type"] %></td>
+      <td><%= view["object_id"] %></td>
+      <td><%= view["action_id"] %></td>
+      <td><%= view["created_by"] %></td>
+    </tr>
+  <% end %>
+<% end %>
+  </table>
+</div>

@@ -1,0 +1,8 @@
+<div id="glue_view">
+  <%= link_to "[Back to model " + @glue_view["model_name"]+"]", model_path(:id => @glue_view["model_id"]) %>
+  <h2>[<%= @glue_view["name"] %>] view of model [<%= @glue_view["model_name"] %>]</h2>
+  <div><%= URI.escape(@glue_view["url"]) %></div>
+  <div>
+    <iframe title="BIM 360 Glue Display Component" width="800" height="600" src="<%= @glue_view["url"] %>" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>

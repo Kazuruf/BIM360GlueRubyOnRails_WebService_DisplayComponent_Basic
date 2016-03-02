@@ -1,0 +1,21 @@
+<div id="projects">
+  <h2>Projects</h2>
+  <table border="1">
+    <tr>
+      <th>Details</th>
+      <th>project_id</th>
+      <th>project_name</th>
+      <th>created_date</th>
+      <th>modify_date</th>
+    </tr>
+  <% @projects.each do |project| %>
+    <tr>
+      <td><%= link_to "Details", project_path(project["project_id"]) %></td>
+      <td><%= project["project_id"] %></td>
+      <td><%= URI.decode(project["project_name"]) %></td>
+      <td><%= project["created_date"] %></td>
+      <td><%= project["modify_date"] %></td>
+    </tr>
+  <% end %>
+  </table>
+</div>

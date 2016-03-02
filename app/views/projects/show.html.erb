@@ -1,0 +1,55 @@
+<div id="signin_form">
+  <p><%= link_to "[Back to projects]", projects_path %></p>
+  <h2>Project information</h2>
+  <div>Name: <%= @project["project_name"] %></div>
+  <div>Project Id: <%= @project["project_id"] %></div>
+  <div>Created date: <%= @project["created_date"] %></div>
+  <hr>
+<% if @project["folder_tree"] %>
+<% @project["folder_tree"].each do |folder| %>
+  <p><%= folder["type"] %> "<%= folder["name"] %>"</p>
+  <table border="1">
+    <tr>
+      <th>Details</th>
+      <th>object_id</th>
+      <th>type</th>
+      <th>name</th>
+      <th>merge model?</th>
+    </tr>
+<% if folder["folder_contents"] %>
+  <% folder["folder_contents"].each do |content| %>
+    <tr>
+      <td><%= link_to "Details", model_path(content["object_id"]) %></td>
+      <td><%= content["object_id"] %></td>
+      <td><%= content["type"] %></td>
+      <td><%= URI.decode(content["name"]) %></td>
+      <td><%= content["is_merged_model"] %></td>
+    </tr>
+  <% end %>
+<% end %>
+  </table>
+<% end %>
+<% end %>
+  <hr>
+  <p>Members</p>
+  <table border="1">
+    <tr>
+      <th>user id</th>
+      <th>first_name</th>
+      <th>last_name</th>
+      <th>email</th>
+      <th>user_type</th>
+      <th>company</th>
+    </tr>
+  <% @project["project_roster"].each do |user| %>
+    <tr>
+      <td><%= user["user_id"] %></td>
+      <td><%= URI.decode(user["first_name"]) %></td>
+      <td><%= URI.decode(user["last_name"]) %></td>
+      <td><%= user["email"] %></td>
+      <td><%= user["user_type"] %></td>
+      <td><%= user["company"] %></td>
+    </tr>
+  <% end %>
+  </table>
+</div>

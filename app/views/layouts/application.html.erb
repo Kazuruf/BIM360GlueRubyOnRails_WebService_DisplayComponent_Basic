@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BIM360GlueRubyonrailsBasic</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1>Welcome to BIM 360 Glue</h1>
+<div>
+  <% flash.each do |message_type, message| %>
+    <div class="alert alert-<%= message_type %>"><%= message %></div>
+  <% end %>
+</div>
+<% if session[:login_name].nil? %>
+  <div><%= link_to "Log in", login_path %></div>
+<% else %>
+  <%= session[:login_name] %>
+  <div><%= link_to "Log out", logout_path, method: :delete %></div>
+<% end %>
+<p><%= link_to "[Home]", root_path %></p>
+<%= yield %>
+
+</body>
+</html>

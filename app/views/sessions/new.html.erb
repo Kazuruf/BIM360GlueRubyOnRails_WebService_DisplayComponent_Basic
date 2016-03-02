@@ -1,0 +1,14 @@
+<div id="signin_form">
+  <p>Sign in to your Autodesk account</p>
+  <%= form_for(:session, url: login_path ) do |f| %>
+    <p>
+      <%= f.text_field :login_name, :placeholder => "Autodesk username" %>
+    </p>
+    <p>
+      <%= f.password_field :password, placeholder: "Password" %>
+    </p>
+    <p>
+      <%= f.submit "Sign In" %>
+    </p>
+  <% end %>
+</div>
